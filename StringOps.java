@@ -103,32 +103,25 @@ public class StringOps {
 
     //        System.out.println((char) ((int) word.charAt(0) + 32));
     public static int[] allIndexOf(String word, char chr) {
-        int count=0;
+            int count = 0;
 
-        for (int i = 0; i <word.length() ; i++) {
-            if(word.charAt(i)==chr){
-                count++;
+            for (int i = 0; i < word.length(); i++) {
+                if (word.charAt(i) == chr) {
+                    count++;
+                }
             }
-        }
-        int[] array=new int[count];
-        int index=0;
-        for (int i = 0; i <word.length() ; i++) {
-            if(word.charAt(i)==chr){
-                array[index]=i;
-                index++;
-            }
-        }
-        System.out.print("[");
-        for (int i = 0; i <array.length ; i++) {
-            if (i != array.length - 1) {
-                System.out.print(array[i] + ", ");
-            } else {
-                System.out.print(array[i]);
-            }
-        }
-        System.out.print("]");
 
-        return array;
-    }
+            int[] array = new int[count];
+            int index = 0;
+
+            for (int i = 0; i < word.length(); i++) {
+                if (word.charAt(i) == chr) {
+                    array[index] = i;
+                    index++;
+                }
+            }
+
+            return array;  // Return the array without printing
+        }
 }
 
