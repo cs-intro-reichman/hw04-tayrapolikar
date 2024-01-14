@@ -1,6 +1,6 @@
 public class StringOps {
     public static void main(String[] args) {
-        System.out.println(capVowelsLowRest("Hello World"));
+       // System.out.println(capVowelsLowRest("Hello World"));
 
       /*  System.out.println(camelCase("Hello World"));
         System.out.println();
@@ -10,7 +10,7 @@ public class StringOps {
         System.out.println();
         System.out.println(camelCase("   Intro to coMPUter sCIEncE   ")); */
 
-        System.out.println(allIndexOf("Hello world",'l'));
+      //  System.out.println(allIndexOf("Hello world",'l'));
 
     }
 
