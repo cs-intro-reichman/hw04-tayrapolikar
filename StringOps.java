@@ -1,16 +1,25 @@
 public class StringOps {
     public static void main(String[] args) {
-       // System.out.println(capVowelsLowRest("Hello World"));
+        System.out.println(capVowelsLowRest("Hello World"));
+        System.out.println(capVowelsLowRest("One two tHRee world"));
+        System.out.println(capVowelsLowRest("vowels are fun"));
+        System.out.println(capVowelsLowRest("intro"));
+        System.out.println(capVowelsLowRest("yellow"));
 
-      /*  System.out.println(camelCase("Hello World"));
+        System.out.println(camelCase("Hello World"));
         System.out.println();
         System.out.println(camelCase(" two     words"));
         System.out.println();
         System.out.println(camelCase("world"));
         System.out.println();
-        System.out.println(camelCase("   Intro to coMPUter sCIEncE   ")); */
+        System.out.println(camelCase("   Intro to coMPUter sCIEncE   "));
 
-      //  System.out.println(allIndexOf("Hello world",'l'));
+        System.out.println(allIndexOf("Hello world",'l'));
+        System.out.println(allIndexOf("Hello worLd",'l'));
+        System.out.println(allIndexOf("Hello world",'0'));
+        System.out.println(allIndexOf("Hello world",' '));
+        System.out.println(allIndexOf("MMMM",'M'));
+
 
     }
 
@@ -30,7 +39,7 @@ public class StringOps {
         return str;
     }
 
-  /*  public static String camelCase(String string) {
+   public static String camelCase(String string) {
         String str = "";
         int indexSpace = 0;
         int numberofLetters = string.length();
@@ -89,7 +98,7 @@ public class StringOps {
             }
         }
         return str;
-    } */
+    }
 
 
     //        System.out.println((char) ((int) word.charAt(0) + 32));
