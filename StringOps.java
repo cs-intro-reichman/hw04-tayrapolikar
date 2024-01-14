@@ -20,7 +20,6 @@ public class StringOps {
         System.out.println(allIndexOf("Hello world",' '));
         System.out.println(allIndexOf("MMMM",'M'));
 
-
     }
 
     public static String capVowelsLowRest(String string) {
@@ -51,8 +50,6 @@ public class StringOps {
                 break;
             }
         }
-       // System.out.println("index:"+indexSpace);
-
         for (int j = 0; j < indexSpace; j++) {
             if (string.charAt(j) == ' ') {
                 continue;
@@ -64,22 +61,17 @@ public class StringOps {
                 str = str + string.charAt(j);
             }
         }
-       // System.out.println(numberofLetters);
-        //System.out.println(str);
-
         for (int i = indexSpace; i < numberofLetters - 1; i++) {
             if (string.charAt(i) ==' ' && string.charAt(i + 1) != ' ') {
                 if ((int) string.charAt(i + 1) >= 65 && (int) string.charAt(i + 1) <= 90) {
-                    // indexSpaceStart = i + 1; //önceki boş sonraki doluysa yeni indeximiz i+1 dir
                     char chr = (char) ((int) string.charAt(i + 1));
                     str = str + chr;
-                 //   System.out.println(str);
                 }
                 else{
                     char chr = (char) ((int) string.charAt(i + 1)-32);
                     str = str + chr;
 
-                }              //      System.out.println(str);
+                }
             }
             if (string.charAt(i) != ' ' && string.charAt(i + 1) != ' ') {
 
@@ -87,7 +79,6 @@ public class StringOps {
                     //     indexSpaceStart = i + 1; //önceki boş sonraki doluysa yeni indeximiz i+1 dir
                     char chr = (char) ((int) string.charAt(i + 1) + 32);
                     str = str + chr;
-                  //  System.out.println(str);
                 } else {
                     char chr = (char) ((int) string.charAt(i + 1));
                     str = str + chr;
@@ -99,9 +90,6 @@ public class StringOps {
         }
         return str;
     }
-
-
-    //        System.out.println((char) ((int) word.charAt(0) + 32));
     public static int[] allIndexOf(String word, char chr) {
             int count = 0;
 
@@ -121,7 +109,7 @@ public class StringOps {
                 }
             }
 
-            return array;  // Return the array without printing
+            return array;
         }
 }
 

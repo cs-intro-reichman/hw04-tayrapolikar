@@ -90,6 +90,6 @@ public class ArrayOps {
                 break;
             }
         }
-        return increase || decrease; //array is either increasing or decreasing
+        return increase || decrease; 
     }
 }
