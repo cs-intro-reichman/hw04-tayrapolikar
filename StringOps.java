@@ -118,7 +118,7 @@ public class StringOps {
                 index++;
             }
         }
-        System.out.print("{");
+        System.out.print("[");
         for (int i = 0; i <array.length ; i++) {
             if (i != array.length - 1) {
                 System.out.print(array[i] + ", ");
@@ -126,7 +126,7 @@ public class StringOps {
                 System.out.print(array[i]);
             }
         }
-        System.out.print("}");
+        System.out.print("]");
 
         return array;
     }
